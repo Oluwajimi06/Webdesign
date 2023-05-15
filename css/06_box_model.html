@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <Style>
+        /* CSS RESET */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        header{
+            text-align: center;
+            background: url("A.png") no-repeat center center/cover;
+            height: 700px;
+            width: 100%;
+            padding: 140px ;
+            font-family: 'Dancing Script', cursive;
+        }
+
+       
+
+        section{
+            height: 300px;
+        }
+
+        footer{
+            background-color: aqua;
+            height: 50px;
+            color: white;
+            /* All round spacing inside */
+            /* padding: 50px;
+            margin: 50px; */
+
+            /* Target where the spacing is applied */
+            /* padding-left: 10px;
+            padding-top: 30px;
+            padding-right: 10px;
+            padding-bottom: 30px; */
+
+            /* Top Right Bottom Left */
+            padding: 10px 30px 10px 30px;
+
+            /* Top Right Bottom Left */
+            
+        }
+
+        body{
+            background-color: aquamarine;
+        }
+
+        .a{
+            text-align: center;
+        }
+
+        .up{
+            background-color: red;
+            padding: 30px;
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+
+        .in{
+            background-color: aqua;
+            padding: 30px;
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+           }
+
+           button{
+            color: white;
+            padding: 30px;
+            text-decoration: none;
+            background-color: blue;
+           }
+
+           .b{
+            padding: 30px;
+           }
+
+        
+
+    </Style>
+</head>
+<body>
+    <!-- AN IMAGE SHOULD BE THE BACKGROUND -->
+    <header class="a">
+        <h1>GUTEN MORGEN</h1>
+    </header>
+    <section class="a">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur tenetur ea esse, aut temporibus quod. Est alias qui, adipisci hic nesciunt neque officia nulla, rem libero consectetur itaque nobis. Eligendi.
+        </p>
+
+        <div class="b">
+            <a href="" class="up">Sign up</a>
+            <a href="" class="in">Sign in</a>
+            <button>Submit</button>
+        </div>
+    </section>
+
+    <!-- A COLOR SHOULD BE THE BACKGROUND -->
+    <footer class="a">
+        <p>copyright &copy; 2023</p>
+    </footer>
+</body>
+</html>
