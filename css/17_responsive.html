@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: hsl(30, 38%, 92%);
+      }
+
+      .main {
+        height: 500px;
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pix {
+        background-image: url("image-product-desktop.jpeg");
+        height: 100%;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      .heading {
+        width: 150px;
+      }
+
+      .word {
+        height: 100%;
+        width: 50%;
+        background-color: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 50px;
+      }
+
+      .item-name {
+        letter-spacing: 5px;
+        font-weight: 100;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        color: #000;
+        font-weight: 100;
+        font-size: 16px;
+        margin-left: 30px;
+      }
+
+      .new-price {
+        font-size: 40px;
+        color: green;
+        display: flex;
+        align-items: center;
+      }
+
+      .space-out {
+        margin-bottom: 30px;
+      }
+
+      p {
+        line-height: 20px;
+      }
+
+      .submit {
+        background-color: green;
+        color: #fff;
+        padding: 15px 60px;
+        border-radius: 5px;
+        text-decoration: none;
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+        font-size: 19px;
+      }
+
+      .cart {
+        margin-right: 10px;
+      }
+
+      @media (max-width: 500px) {
+        .main{
+            flex-direction: column;
+        }
+        .word {
+        height: 60%;
+        width: 50%;
+        background-color: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 50px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <!-- PICTURE -->
+      <div class="pix"></div>
+
+      <!-- CONTENT -->
+      <div class="word">
+        <h2 class="item-name space-out">PERFUME</h2>
+
+        <h1 class="heading space-out">Gabrielle Essence Eau De Parfum</h1>
+
+        <p class="space-out">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <h1 class="space-out new-price">
+          $149.99 <span class="old-price">$169.99</span>
+        </h1>
+
+        <a href="" class="submit">
+          <img src="cart.svg" alt="" class="cart" />
+          Add to Cart</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
